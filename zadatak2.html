@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Prijava za članstvo u EESTEC LC Sarajevo</title>
+</head>
+<body>
+    <h1>Prijava za nove članove udruženja EESTEC LC Sarajevo</h1>
+    <form>
+        <label for="imePrezime">Ime i prezime:</label><br />
+        <input type="text" id="imePrezime" name="imePrezime" /><br /><br />
+        <label for="godina">Godina studija:</label><br />
+        <select id="godina" name="godina">
+            <option value="1">Prva godina (I ciklus)</option>
+            <option value="2">Druga godina (I ciklus)</option>
+            <option value="3">Treća godina (I ciklus)</option>
+            <option value="4">Master studij</option>
+        </select><br /><br />
+        <p><strong>Izaberite poziciju za koju se prijavljujete:</strong></p>
+        <input type="radio" id="pr" name="tim" value="pr" />
+        <label for="pr">PR tim (Odnosi s javnošću)</label><br />
+        <input type="radio" id="fr" name="tim" value="fr" />
+        <label for="fr">FR tim (Odnosi s kompanijama)</label><br />
+        <input type="radio" id="it" name="tim" value="it" />
+        <label for="it">IT tim (Tehnička podrška i web dizajn)</label><br />
+        <input type="radio" id="cp" name="tim" value="cp" />
+        <label for="cp">CP (Odnos sa internacionalnim partnerima)</label><br /><br />
+        <p><strong>Kako ste čuli za EESTEC LC Sarajevo?</strong></p>
+        <input type="checkbox" id="regrutacije" name="interesi" value="regrutacije" />
+        <label for="regrutacije">Regrutacije</label><br />
+        <input type="checkbox" id="promocija" name="interesi" value="promocija" />
+        <label for="promocija">promocija kroz društvene mreže</label><br />
+        <input type="checkbox" id="jf" name="interesi" value="jf" />
+        <label for="jf">JobFAIR sajam</label><br /><br />
+        <input type="submit" value="Pošalji prijavu" />
+    </form>
+</body>
+</html>

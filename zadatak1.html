@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JobFAIR - Sajam zapošljavanja</title>
+</head>
+<body>
+    <h1>JobFAIR - Kreiraj svoju budućnost!</h1>
+    <h2>O Događaju</h2>
+    <p>
+        <strong>JobFAIR</strong> je sajam zapošljavanja namenjen studentima i diplomcima tehničkih fakulteta. 
+        Događaj je organizovan od strane udruženja studenata elektrotehnike - <strong>EESTEC LC Sarajevo</strong> s ciljem povezivanja mladih inženjera sa vodećim kompanijama iz IT i inženjerskog sektora.
+    </p>
+    <img src="JobFAIRlogo.png" alt="Logotip JobFAIR sajma zapošljavanja u organizaciji EESTEC LC Sarajevo" />
+    <h2>Vrijeme, Mjesto i Prijave</h2>
+    <p>
+        Sajam će se održati u <strong>aprilu sljedeće godine</strong> u prostorijama <strong>Doma mladih</strong>, na Skenderiji. 
+        Posjetioci će imati priliku predati svoj CV, učestvovati na radionicama i direktno razgovarati sa predstavnicima kompanija.
+    </p>
+    <h3>Šta vas očekuje na JobFAIR-u:</h3>
+    <ul>
+        <li>Direktan kontakt sa regruterima top kompanija</li>
+        <li>Interaktivne radionice i predavanja</li>
+        <li>Career speed dating</li>
+    </ul>
+    <p>
+        Za više detalja i pregled dosadašnjih izdanja posjetite zvaničnu stranicu: 
+        <a href="https://jobfair.ba/" target="_blank">Zvanična JobFAIR stranica</a>
+    </p>
+    <h2>Pretprijava Posjetilaca</h2>
+    <form>
+        <label for="imePrezime">Ime i prezime:</label><br>
+        <input type="text" id="imePrezime" name="imePrezime"><br><br>
+        <label for="status">Trenutni status:</label><br>
+        <select id="status" name="status">
+            <option value="student">Student</option>
+            <option value="diplomac">Diplomac</option>
+            <option value="zaposlen">Zaposlen / Tražim promjenu</option>
+        </select><br><br>
+        <p>Koji vas smjer/oblast najviše zanima?</p>
+        <input type="radio" id="dev" name="oblast" value="development">
+        <label for="dev">Software Development</label><br>
+        <input type="radio" id="data" name="oblast" value="data">
+        <label for="data">Data Science / AI</label><br>
+        <input type="radio" id="sys" name="oblast" value="system">
+        <label for="sys">Sistemsko inženjerstvo i mreže</label><br><br>
+        <input type="checkbox" id="novosti" name="novosti">
+        <label for="novosti">Želim primati obavještenja o rasporedu radionica na e-mail</label><br><br>
+        <input type="submit" value="Pošalji prijavu">
+    </form>
+
+</body>
+</html>
