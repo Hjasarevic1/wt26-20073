@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadatak1 - Kontrolna lista</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .zavrseno { text-decoration: line-through; color: gray; }
+    ul { list-style-type: none; padding: 0; }
+    li { margin: 12px 0; cursor: pointer; user-select: none; }
+    button { margin-left: 12px; cursor: pointer; }
+    #sazetak { font-weight: bold; margin-bottom: 15px; font-size: 1.1em; }
+  </style>
+</head>
+<body>
+  <h2>Kontrolna lista pripremnih aktivnosti</h2>
+  <div id="sazetak"></div>
+  <ul id="lista-aktivnosti">
+    <li><span>Pripremiti predavačke materijale</span> <button>Promijeni stanje</button></li>
+    <li><span>Postaviti HTML/CSS strukturu</span> <button>Promijeni stanje</button></li>
+    <li><span>Testirati DOM funkcionalnosti</span> <button>Promijeni stanje</button></li>
+    <li><span>Pregledati repozitorij vježbe</span> <button>Promijeni stanje</button></li>
+    <li><span>Poslati izvještaj o radu</span> <button>Promijeni stanje</button></li>
+  </ul>
+  <br>
+  <button id="btn-reset">Vrati sve u početno stanje</button>
+  <script src="zadatak1Lab4.js"></script>
+</body>
+</html>

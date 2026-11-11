@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadatak3 - Evidencija troškova</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    table { border-collapse: collapse; width: 480px; margin-top: 15px; }
+    th, td { border: 1px solid #aaa; padding: 8px; text-align: left; }
+    th { background-color: #f0f0f0; }
+    .broj-kolona { text-align: right; }
+    .red-zbir { font-weight: bold; background-color: #e9e9e9; }
+    .red-statistika { background-color: #f9f9f9; font-weight: bold; }
+    .forma-unos { margin-bottom: 15px; }
+    .forma-unos input { margin-right: 8px; }
+    .greska { color: red; font-size: 0.9em; margin-top: 5px; }
+  </style>
+</head>
+<body>
+
+  <h2>Evidencija troškova</h2>
+  <div class="forma-unos">
+    <input type="text" id="naziv" placeholder="Naziv troška">
+    <input type="number" id="iznos" step="0.01" placeholder="Iznos (KM)">
+    <button id="btn-dodaj">Dodaj stavku</button>
+    <div id="greska-unos" class="greska"></div>
+  </div>
+  <table id="tabela-evidencija">
+    <thead>
+      <tr>
+        <th>R.br.</th>
+        <th>Naziv stavke</th>
+        <th class="broj-kolona">Iznos (KM)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Kancelarijski materijal</td>
+        <td class="broj-kolona">45.50</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Pretplata za internet</td>
+        <td class="broj-kolona">60.00</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Oprema za radionicu</td>
+        <td class="broj-kolona">120.00</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr class="red-zbir">
+        <td colspan="2">Ukupno (<span id="broj-stavki"></span> stavki):</td>
+        <td id="ukupni-zbir" class="broj-kolona"></td>
+      </tr>
+      <tr class="red-statistika">
+        <td colspan="2">Maksimalni iznos:</td>
+        <td id="max-vrijednost" class="broj-kolona"></td>
+      </tr>
+      <tr class="red-statistika">
+        <td colspan="2">Prosječni iznos:</td>
+        <td id="prosjecna-vrijednost" class="broj-kolona"></td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <script src="zadatak3Lab4.js"></script>
+</body>
+</html>

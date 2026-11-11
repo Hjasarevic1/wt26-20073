@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadatak2 - Forma za obavijest</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .kontejner { display: flex; gap: 15px; }
+    .forma-okvir, .pregled-okvir { border: 1px solid #000; padding: 10px; width: 300px; border-radius: 10px; }
+    .polje { margin-bottom: 14px; }
+    .polje label { display: block; margin-bottom: 7px; font-weight: bold; }
+    .polje input, .polje textarea, .polje select { width: 100%; box-sizing: border-box; }
+    .greska { color: red; font-size: 1rem; margin-top: 14px; display: none; }
+    .kategorija-obavjestenje { border-left: 2px solid blue; background-color: #e3f2fd; padding: 5px; }
+    .kategorija-hitno { border-left: 5px solid red; background-color: #ffebee; padding: 10px; }
+    .oznaka-kat { font-weight: bold; font-size: 1rem; text-transform: uppercase; display: inline-block; margin-bottom: 5px; }
+  </style>
+</head>
+<body>
+  <h2>Kratka obavijest</h2>
+  <div class="kontejner">
+    <div class="forma-okvir">
+      <h3 style="text-align: center;">Unos obavijesti</h3>
+      <form id="forma-obavijest">
+        <div class="polje">
+          <label for="naslov">Naslov:</label>
+          <input type="text" id="naslov">
+        </div>
+        
+        <div class="polje">
+          <label for="tekst">Tekst obavijesti:</label>
+          <textarea id="tekst" rows="4"></textarea>
+        </div>
+
+        <div class="polje">
+          <label for="kategorija">Kategorija:</label>
+          <select id="kategorija">
+            <option value="Info">Opšta obavijest</option>
+            <option value="Hitno">Hitno upozorenje</option>
+          </select>
+        </div>
+
+        <button type="button" id="btn-pregled">Pregledaj</button>
+        <button type="reset" id="btn-reset-forma">Vrati u početno stanje</button>
+      </form>
+      <div id="poruka-greske" class="greska"></div>
+    </div>
+
+    <div class="pregled-okvir">
+      <h3 style="text-align: center;">Pregled obavijesti</h3>
+      <div id="pregled-sadrzaj">
+        <p><i>Nema unesenih podataka za pregled.</i></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="zadatak2Lab4.js"></script>
+</body>
+</html>
